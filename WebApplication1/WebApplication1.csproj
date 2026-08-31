@@ -73,8 +73,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Petshop.DAL\" />
-    <Folder Include="Petshop.BLL\" />
+    <Folder Include="Petshop.BLL\Interfaces\" />
+    <Folder Include="Petshop.BLL\Services\" />
+    <Folder Include="Petshop.DAL\Migrations\" />
+    <Folder Include="Petshop.DAL\Models\" />
   </ItemGroup>
 
 </Project>
