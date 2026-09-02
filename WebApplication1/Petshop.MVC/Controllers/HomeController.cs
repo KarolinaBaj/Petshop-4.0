@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using WebApplication1.Petshop.MVC.Models;
 
 namespace WebApplication1.Petshop.MVC.Controllers
 {
