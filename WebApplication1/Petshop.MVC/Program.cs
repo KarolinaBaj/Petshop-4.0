@@ -22,7 +22,7 @@ app.MapStaticAssets();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
+    pattern: "{controller=Petshop.MVC\\Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
 

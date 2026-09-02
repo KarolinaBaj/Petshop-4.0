@@ -77,6 +77,8 @@
     <Folder Include="Petshop.BLL\Services\" />
     <Folder Include="Petshop.DAL\Migrations\" />
     <Folder Include="Petshop.DAL\Models\" />
+	<Folder Include="Petshop.Petshop.MVC\Models\ErrorViewModel" />
+	<Content Include="Petshop.Petshop.MVC\View\Home" />
   </ItemGroup>
 
 </Project>
