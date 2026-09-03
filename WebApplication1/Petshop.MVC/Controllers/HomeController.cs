@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ViewEngines;
 using WebApplication1.Petshop.MVC.Models;
 
 namespace WebApplication1.Petshop.MVC.Controllers
@@ -20,7 +21,6 @@ namespace WebApplication1.Petshop.MVC.Controllers
 
         public IActionResult Privacy()
         {
-            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
