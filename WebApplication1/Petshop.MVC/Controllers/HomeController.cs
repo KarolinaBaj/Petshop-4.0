@@ -16,11 +16,12 @@ namespace WebApplication1.Petshop.MVC.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View("~/Petshop.MVC/Views/Home/Index.cshtml");
         }
 
         public IActionResult Privacy()
         {
+            return View("~/Petshop.MVC/Views/Home/Privacy.cshtml");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
