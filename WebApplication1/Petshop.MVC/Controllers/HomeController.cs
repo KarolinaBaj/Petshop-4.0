@@ -24,6 +24,10 @@ namespace WebApplication1.Petshop.MVC.Controllers
             return View("~/Petshop.MVC/Views/Home/Privacy.cshtml" );
         }
 
+        
+
+        
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

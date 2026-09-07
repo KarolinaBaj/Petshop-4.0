@@ -7,54 +7,63 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Petshop.Petshop.MVC\**" />
+    <Content Remove="Petshop.Petshop.MVC\**" />
+    <EmbeddedResource Remove="Petshop.Petshop.MVC\**" />
+    <None Remove="Petshop.Petshop.MVC\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap-grid.css" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap-grid.css.map" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap-grid.min.css" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap-grid.min.css.map" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.css" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.css.map" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.min.css" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap-reboot.css" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap-reboot.css.map" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap-reboot.min.css" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap-reboot.min.css.map" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.css" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.css.map" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.min.css" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap-utilities.css" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap-utilities.css.map" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap-utilities.min.css" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap-utilities.min.css.map" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.css" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.css.map" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.min.css" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap.css" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap.css.map" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap.min.css" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap.min.css.map" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap.rtl.css" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap.rtl.css.map" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap.rtl.min.css" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\css\bootstrap.rtl.min.css.map" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\js\bootstrap.bundle.js" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\js\bootstrap.bundle.js.map" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\js\bootstrap.bundle.min.js" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\js\bootstrap.bundle.min.js.map" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\js\bootstrap.esm.js" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\js\bootstrap.esm.js.map" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\js\bootstrap.esm.min.js" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\js\bootstrap.esm.min.js.map" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\js\bootstrap.js" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\js\bootstrap.js.map" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\js\bootstrap.min.js" />
+    <Content Remove="C:\Users\Karolina\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\js\bootstrap.min.js.map" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="Petshop.MVC\wwwroot\css\site.css" />
     <Content Include="Petshop.MVC\wwwroot\favicon.ico" />
     <Content Include="Petshop.MVC\wwwroot\js\site.js" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map" />
-    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\LICENSE" />
     <Content Include="Petshop.MVC\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js" />
     <Content Include="Petshop.MVC\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js" />
     <Content Include="Petshop.MVC\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt" />
@@ -73,15 +82,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="lib\" />
     <Folder Include="Petshop.BLL\Interfaces\" />
     <Folder Include="Petshop.BLL\Services\" />
     <Folder Include="Petshop.DAL\Migrations\" />
     <Folder Include="Petshop.DAL\Models\" />
-	<Folder Include="Petshop.Petshop.MVC\Models\ErrorViewModel" />
-	<Content Include="Petshop.Petshop.MVC\View\Home" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="bootstrap" Version="5.3.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.11" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.11">
       <PrivateAssets>all</PrivateAssets>
