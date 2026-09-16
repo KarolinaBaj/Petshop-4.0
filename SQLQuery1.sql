@@ -57,3 +57,12 @@ REFERENCES porudzbina (porudzbina_id);
 Alter table  stavkaporudzbine
 add constraint  FK_stavkaproizvoda foreign key (Proizvod_id)
 REFERENCES proizvod (Proizvod_id);
+
+alter table korisnik
+add lozinka Nvarchar(255)  
+
+Update korisnik
+set lozinka ='test123'
+where Korsnik_id = 1;
+
+select * from korisnik

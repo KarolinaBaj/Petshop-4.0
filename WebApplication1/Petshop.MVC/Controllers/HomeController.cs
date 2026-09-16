@@ -24,9 +24,15 @@ namespace WebApplication1.Petshop.MVC.Controllers
             return View("~/Petshop.MVC/Views/Home/Privacy.cshtml" );
         }
 
-        
+        public IActionResult LoginStrana()
+        {
+            return View("~/Petshop.MVC/Views/Home/loginstrana.cshtml");
+        }
 
-        
+
+
+
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

@@ -63,15 +63,22 @@
   <ItemGroup>
     <None Remove="Petshop.MVC\Views\Shared\_Layout.cshtml.css" />
     <None Remove="Petshop.MVC\Views\_Layout.cshtml.css" />
+    <None Remove="Petshop.MVC\wwwroot\css\site.css" />
+    <None Remove="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="Petshop.MVC\Views\Shared\_Layout.cshtml.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Petshop.MVC\wwwroot\css\site.css" />
+    <Content Include="Petshop.MVC\wwwroot\css\site.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Petshop.MVC\wwwroot\favicon.ico" />
     <Content Include="Petshop.MVC\wwwroot\js\site.js" />
+    <Content Include="Petshop.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Petshop.MVC\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js" />
     <Content Include="Petshop.MVC\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js" />
     <Content Include="Petshop.MVC\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt" />
@@ -80,7 +87,9 @@
     <Content Include="Petshop.MVC\wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
     <Content Include="Petshop.MVC\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
     <Content Include="Petshop.MVC\wwwroot\lib\jquery-validation\LICENSE.md" />
-    <Content Include="Petshop.MVC\wwwroot\lib\jquery\dist\jquery.js" />
+    <Content Include="Petshop.MVC\wwwroot\lib\jquery\dist\jquery.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Petshop.MVC\wwwroot\lib\jquery\dist\jquery.min.js" />
     <Content Include="Petshop.MVC\wwwroot\lib\jquery\dist\jquery.min.map" />
     <Content Include="Petshop.MVC\wwwroot\lib\jquery\dist\jquery.slim.js" />
