@@ -18,13 +18,35 @@ img {
     left: 10%;
 }
 
+/*loginstranica*/
+.login-container {
+    width: 350px;
+    margin: 50px auto;
+    text-align: center;
+    scroll-margin-bottom:10px;
+}
+/*signupstranica*/
+.signup-conteiner {
+    width: 350px;
+    margin: 50px auto;
+    text-align: center;
+    scroll-margin-bottom: 10px;
+}
+    .login {
+    width: 60%;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
 
 body {
-    background-color: red;
+    background-color: steelblue;
 }
 
 p {
-    color: red;
+    color: gray;
 }
 
 html {

@@ -30,7 +30,10 @@ namespace WebApplication1.Petshop.MVC.Controllers
         }
 
 
-
+        public IActionResult signupstrana()
+        {
+            return View("~/Petshop.MVC/Views/Home/signupstrana.cshtml");
+        }
 
 
 

@@ -51,9 +51,11 @@
                                 Log in
                             </button>
                             </form>
-                            <button class="nav-item text-dark dugme-btn" href="" target="_blank" rel="noopener noreferrer">
+                            <form asp-controller="Home" asp-action="signupstrana" method="post">
+                                <button class="nav-item text-dark dugme-btn" href="" target="_blank" rel="noopener noreferrer" asp-controller="Home" asp-action="signupstrana">
                                 Sign up
-                            </button>
+                                </button>
+                            </form>
                        </li>
                     </ul>
                 </div>
