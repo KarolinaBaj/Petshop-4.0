@@ -100,10 +100,7 @@
 
   <ItemGroup>
     <Folder Include="lib\" />
-    <Folder Include="Petshop.BLL\Interfaces\" />
-    <Folder Include="Petshop.BLL\Services\" />
     <Folder Include="Petshop.DAL\Migrations\" />
-    <Folder Include="Petshop.DAL\Models\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -116,6 +113,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Petshop.MVC\Controllers\AccountController.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Petshop.MVC\appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Update="Petshop.MVC\Views\Shared\_Layout.cshtml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

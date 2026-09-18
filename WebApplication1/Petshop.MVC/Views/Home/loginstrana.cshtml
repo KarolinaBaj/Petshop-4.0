@@ -1,4 +1,6 @@
-﻿@{
+﻿@model WebApplication1.Petshop.DAL.Models.User
+
+@{
     ViewData["Title"] = "login page";
     
 }
@@ -12,13 +14,16 @@
 </head>
 
 <div class="login-container" >
-<form> 
-   <label for="user">Korisnicko ime:</label><br> 
- <input type="text" id="user" name="user" placeholder="Korisnicko ime">
+<form asp-controller="Account" asp-action="loginstrana" method="post"> 
+  
+    <label >Korisnicko ime:</label><br>
+        <input asp-for="email" placeholder="Email"></input> <br>
+        <span asp-validation-for="email"></span>
         <br>
     
- <label for="pass">Lozinka:</label><br>
- <input typeof="password" id="pass" name ="Password " placeholder ="Lozinka">
+        <label  >Lozinka:</label><br>
+        <input asp-for="lozinka" type="password" placeholder="Lozinka"></input>
+        <span asp-validation-for="lozinka"></span>
 
  <button type ="submit"class="login">log in</button>
 
