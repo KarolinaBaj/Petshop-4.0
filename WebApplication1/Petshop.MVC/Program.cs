@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
 using WebApplication1.Petshop.DAL;
+using WebApplication1.Petshop.DAL.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +10,12 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<PetshopDBcontext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+builder.Configuration.SetBasePath(builder.Environment.ContentRootPath)
+    .AddJsonFile("Petshop.MVC/appsettings.json", optional: false, reloadOnChange: true);
+    
+
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -47,5 +53,5 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
-
+Console.WriteLine(builder.Configuration.GetConnectionString("DefaultConnection"));
 app.Run();

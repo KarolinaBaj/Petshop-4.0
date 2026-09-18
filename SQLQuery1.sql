@@ -4,6 +4,7 @@ create table korisnik(
 Korsnik_id int identity(1,1) primary key,
 ime varchar(100) not null,
 prezime varchar(100) not null,
+lozinka Nvarchar(255) not null,
 br_telefona int not null,
 email varchar(100) not null,
 adresa varchar(100) not null
@@ -64,5 +65,14 @@ add lozinka Nvarchar(255)
 Update korisnik
 set lozinka ='test123'
 where Korsnik_id = 1;
+
+select * from korisnik
+
+drop table korisnik
+alter table porudzbina
+drop constraint  FK_Korisnik
+
+insert into korisnik(ime,prezime ,lozinka ,br_telefona ,email,adresa )
+values('admin123', 'yey','test123',067543123, 'milenkobubamara@gmail.com', 'apr123 ')
 
 select * from korisnik

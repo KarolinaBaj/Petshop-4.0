@@ -18,13 +18,19 @@ img {
     left: 10%;
 }
 
-/*loginstranica*/
-.login-container {
-    width: 350px;
-    margin: 50px auto;
-    text-align: center;
-    scroll-margin-bottom:10px;
+.nav-item form {
+    display: inline-block;
+    margin: 0;
 }
+.dugme-btn,
+.dugmad-btn {
+    background-color: cornflowerblue;
+    cursor: pointer;
+    padding: 2px 5px;
+    font-size: 14px;
+    margin: 0;
+}
+
 /*signupstranica*/
 .signup-conteiner {
     width: 350px;
@@ -32,17 +38,35 @@ img {
     text-align: center;
     scroll-margin-bottom: 10px;
 }
-    .login {
+.submitdugme {
     width: 60%;
     padding: 20px;
     background-color: #f8f9fa;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 10px;
+    color:darkslategrey;
+}
+/*loginstranica*/
+.login-container {
+    width: 350px;
+    margin: 50px auto;
+    text-align: center;
+    scroll-margin-bottom: 10px;
+}
+/*dugme*/
+.login {
+    width: 60%;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    color: darkslategrey;
 }
 
 body {
-    background-color: steelblue;
+    
 }
 
 p {

@@ -19,6 +19,12 @@ a {
     background-color:cornflowerblue;
     cursor: alias;
 }
+.dugme2-btn {
+    margin-left : 20px;
+    text-align:center;
+    background-color: cornflowerblue;
+    cursor: alias;
+}
 
 .produkti {
     display: grid;
