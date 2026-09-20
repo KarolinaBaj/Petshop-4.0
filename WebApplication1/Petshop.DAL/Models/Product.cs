@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebApplication1.Petshop.DAL.Models
 {
+    [Table("proizvod")]
     public class Product
     {
         [Key]

@@ -1,17 +1,48 @@
-﻿<!DOCTYPE html>
+﻿@model WebApplication1.Petshop.DAL.Models.User;
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <title></title>
 </head>
 <div class="signup-conteiner">
-<form >
-    <label for="user"> Unesite korisnicko ime:</label>
-    <input type="text" id="user"  name="user" placeholder="Korisničko ime"></input>
-    <br>
-    <label for=" password" >Unsite korisničku šifru</label> <br>
-    <input type="password" id="password" name="pass" placeholder="Lozinka"></input>
-</form>
+    <div class="signup-container">
+        <form asp-controller="Account" asp-action="signupstrana" method="post">
+
+            <label>Ime:</label><br>
+            <input asp-for="ime" placeholder="Ime" /><br>
+            <span asp-validation-for="ime"></span>
+            <br>
+
+            <label>Prezime:</label><br>
+            <input asp-for="prezime" placeholder="Prezime" /><br>
+            <span asp-validation-for="prezime"></span>
+            <br>
+
+            <label>Lozinka:</label><br>
+            <input asp-for="lozinka" type="password" placeholder="Lozinka" /><br>
+            <span asp-validation-for="lozinka"></span>
+            <br>
+
+            <label>Unesite email adresu:</label><br>
+            <input asp-for="email" placeholder="Email" /><br>
+            <span asp-validation-for="email"></span>
+            <br>
+
+            <label>Unesite adresu:</label><br>
+            <input asp-for="adresa" placeholder="Adresa" /><br>
+            <span asp-validation-for="adresa"></span>
+            <br>
+
+            <label>Unesite broj telefona:</label><br>
+            <input asp-for="br_telefona" placeholder="Broj telefona" /><br>
+            <span asp-validation-for="br_telefona"></span>
+            <br>
+
+            <button type="submit" class="submitdugme">Sign up</button>
+
+        </form>
 </div>
 
 <body>

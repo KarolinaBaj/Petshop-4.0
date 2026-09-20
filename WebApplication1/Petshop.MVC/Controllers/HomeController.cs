@@ -1,22 +1,29 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ViewEngines;
+using WebApplication1.Petshop.DAL.Models;
+using WebApplication1.Petshop.DAL;
 using WebApplication1.Petshop.MVC.Models;
 
 namespace WebApplication1.Petshop.MVC.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly PetshopDBcontext _context;
+        //private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        //public HomeController(ILogger<HomeController> logger)
+        //{
+        //    _logger = logger;
+        //}
+        public HomeController(PetshopDBcontext context)
         {
-            _logger = logger;
+            _context = context;
         }
-
         public IActionResult Index()
         {
-            return View("~/Petshop.MVC/Views/Home/Index.cshtml");
+            List<Product> listaProizvoda = _context.Products.ToList();
+            return View("~/Petshop.MVC/Views/Home/Index.cshtml", listaProizvoda);
         }
 
         public IActionResult Privacy()
@@ -34,6 +41,13 @@ namespace WebApplication1.Petshop.MVC.Controllers
         {
             return View("~/Petshop.MVC/Views/Home/signupstrana.cshtml");
         }
+
+        public IActionResult Proizvod()
+        {
+            return View("~/Petshop.MVC/Views/Home/Proizvod.cshtml");
+        }
+
+
 
 
 

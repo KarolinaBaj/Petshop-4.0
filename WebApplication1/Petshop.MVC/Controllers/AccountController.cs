@@ -19,22 +19,31 @@ namespace WebApplication1.Petshop.MVC.Controllers
         [HttpPost]
         public IActionResult signupstrana(User user)
         {
-            
+
+
+            if (_context.Users.Any(x => x.email == user.email))
+            {
+                ViewBag.Greska = "Email je vec registrovan";
+                return Redirect("https://www.youtube.com/shorts/ynKyjrLmpHo");
+            }
            
             if (ModelState.IsValid)
             {
                 _context.Users.Add(user);
                 _context.SaveChanges();
+        
+             }
 
-                
-            }
-
-           
-            
-
-            return RedirectToAction("LoginStrana","Home");
+           return RedirectToAction("LoginStrana","Home");
 
         }
+
+
+
+
+            
+
+        
 
         [HttpPost]
         public IActionResult LoginStrana(User user)
